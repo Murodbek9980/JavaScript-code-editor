@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Пример использования jQuery метода .clone()</title>
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script>
+	$( document ).ready(function(){
+	  $( "button" ).click(function(){ // задаем функцию при нажатиии на элемент <button>
+	    $( "form:first" ).clone() // создаем копию первого элемента формы
+		             .appendTo( "body" ); // вставляем клонированный элемент
+ 	  });
+	});
+		</script>
+	</head>
+	<body>
+		<button>Клик</button><br><br>
+		<form>
+			<label>Мужчина <input  type = "radio" name = "sex" value = "male"></label>
+			<label>Женщина <input type = "radio" name = "sex" value =  "female"></label><br>
+			<label>Больше 18 <input type = "checkbox" name = "type1" value = "low"</label>
+			<label>Меньше 18 <input type = "checkbox" name = "type2" value = "2old">></label><br>
+		</form>
+	</body>
+</html>
